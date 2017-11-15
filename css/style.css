@@ -1,0 +1,50 @@
+/* Typography */
+
+body {
+  font: normal normal 16px/1.4 "proxima-nova",sans-serif;
+}
+
+h1 {
+  font-size:48px;
+  font-weight:	700;
+}
+
+h1 {
+  font-size:36px;
+  font-weight:	700;
+}
+
+h3 {
+  font-size:28px;
+  font-weight:	400;
+}
+
+h4 {
+  font-size:24px;
+  font-weight:	400;
+}
+
+h5 {
+  font-size:18px;
+  font-weight:	400;
+}
+
+h6 {
+  font-size:14px;
+  font-weight:	400;
+}
+
+/* Typography End */
+
+
+
+/* Trainging Navigator */
+
+.navigator {
+  background-color:#f3f8f7;
+  min-height:246px;
+  border-radius:5px;
+  padding:50px
+}
+
+/* Trainging Navigator End */
