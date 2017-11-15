@@ -1,41 +1,58 @@
 /* Typography */
 
 body {
-  font: normal normal 16px/1.4 "proxima-nova",sans-serif;
+  font: normal  16px/1.4 "proxima-nova",sans-serif;
 }
 
 h1 {
   font-size:48px;
-  font-weight:	700;
+  font-weight:700;
 }
 
-h1 {
+h2 {
   font-size:36px;
-  font-weight:	700;
+  font-weight:700;
 }
 
 h3 {
   font-size:28px;
-  font-weight:	400;
+  font-weight:400;
 }
 
 h4 {
   font-size:24px;
-  font-weight:	400;
+  font-weight:400;
 }
 
 h5 {
   font-size:18px;
-  font-weight:	400;
+  font-weight:400;
 }
 
 h6 {
   font-size:14px;
-  font-weight:	400;
+  font-weight:400;
+}
+
+.green {
+  color:#007050;
 }
 
 /* Typography End */
 
+
+/* Elements */
+
+hr.divider {
+  border-top: 2px solid #007050;
+}
+
+.vr-divider {
+   padding: 0 5px 0 5px;
+   color:#007050;
+}
+
+/* Elements End */
 
 
 /* Trainging Navigator */
@@ -44,7 +61,56 @@ h6 {
   background-color:#f3f8f7;
   min-height:246px;
   border-radius:5px;
-  padding:50px
+  padding:50px;
+  margin-bottom: 36px;
+}
+
+.navigator-title {
+  text-align:center;
+  color:#007050;
+}
+
+.navigator-subtitle {
+  text-align:center;
+  font-style:italic;
+}
+
+.navigator-hr {
+  width:246px;
+}
+
+
+.group-categories-list {
+  list-style: none;
+  text-align:center;
+  color:#59a28d;
+  font-size:18px;
+  display:inline;
 }
 
 /* Trainging Navigator End */
+
+
+/* Exercises Section */
+
+.exercises-section {
+  margin-bottom: 36px;
+}
+
+.section-header {
+  background-color:#59a28d;
+  border-radius:5px 5px 0 0;
+  padding:1px 0 10px 0;
+}
+
+.section-title {
+  color:#fff;
+  text-align:center;
+}
+
+.section-body {
+  background-color:#f3f8f7;
+  border-radius:0 0 0px 0px;
+}
+
+/* Exercises Section End */
