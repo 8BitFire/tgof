@@ -100,7 +100,7 @@ hr.divider {
 .section-header {
   background-color:#59a28d;
   border-radius:5px 5px 0 0;
-  padding:1px 0 10px 0;
+  padding:10px 0 3px 0;
 }
 
 .section-title {
@@ -111,6 +111,7 @@ hr.divider {
 .section-body {
   background-color:#f3f8f7;
   border-radius:0 0 0px 0px;
+  padding: 15px 0 0 0;
 }
 
 /* Exercises Section End */
