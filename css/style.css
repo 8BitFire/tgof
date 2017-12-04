@@ -51,30 +51,73 @@ a:hover {
 
 /* Elements */
 
+.container {
+  max-width:1366px;
+}
+
 hr.divider {
   border-top: 2px solid #007050;
 }
 
 .vr-divider {
-   padding: 0 5px 0 5px;
+   padding: 0 3px 0 3px;
    color:#007050;
 }
+
+.img-thumbnail {
+    padding: 0;
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    transition: all .2s ease-in-out;
+    max-width: 100%;
+    height: auto;
+    border-right:  1px solid #000;
+    border-bottom: 1px solid #000;
+  }
 
 /* Elements End */
 
 /* Navbar */
 
+.full-navbar {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+}
+
 .navbar {
   background-color:#59a28d;
   color:#ffffff;
+  display:inherit;
+}
+
+.sub-navbar {
+  background-color:#fff;
+  color:#000000;
+  display:inherit;
+  padding:14px 0 14px 0;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.sub-nav a {
+    color:#000;
+}
+
+.sub-nav a:hover {
+  color:#7cb9a6;
+}
+
+.sub-nav-link {
+  padding-right: 1.9rem;
+  text-decoration:none !important;
 }
 
 .navbar a {
-    color:#fff;
+    color:#fff !important;
 }
 
 .navbar a:hover {
-  color:#7cb9a6;
+  color:#7cb9a6 !important;
 }
 
 .navbar-container {
@@ -83,14 +126,22 @@ hr.divider {
 
 #navbarSupportedContent {
   color:#fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .navbar-brand {
-  color:#ffffff;
+  color:#ffffff !important;
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .navbar-btn {
   color:#fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
   background-color:transparent;
   border: 2px solid #fff;
   border-radius:0;
@@ -98,6 +149,8 @@ hr.divider {
 }
 
 .navbar-btn:hover {
+  font-weight: 700;
+  letter-spacing: 1px;
   color:#7cb9a6;
   background-color:#fff;
   border: 2px solid #fff;
@@ -105,22 +158,36 @@ hr.divider {
   padding:4px 16px 4px 16px;
 }
 
+
+.sub-nav {
+  background-color:#fff;
+}
+
+.sub-nav a {
+    color:#000;
+}
+
+.sub-nav a:hover {
+  color:#7cb9a6;
+}
+
+
 /* Nav Bar End */
 
 
-/* Trainging Navigator */
+/* Training Navigator */
 
 .navigator {
   background-color:#f3f8f7;
-  min-height:246px;
   border-radius:5px;
-  padding:50px;
+  padding:20px 50px 10px 50px;
   margin: 30px 0 36px 0;
 }
 
 .navigator-title {
   text-align:center;
   color:#007050;
+  font-weight: 700;
 }
 
 .navigator-subtitle {
@@ -138,16 +205,34 @@ hr.divider {
   text-align:center;
   color:#59a28d;
   font-size:18px;
-  display:inline;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-padding-start:0px;
+  margin-top: -10px;
 }
 
-/* Trainging Navigator End */
+.category {
+  margin:12px 10px 0 10px;
+  font-size: 15px;
+  font-weight:700;
+}
+
+.category:hover {
+text-decoration: none;
+border-bottom: 2px solid #59a28d;
+margin-bottom: -2px;
+}
+
+/* Training Navigator End */
 
 
 /* Exercises Section */
 
 .exercises-section {
   margin-bottom: 36px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 }
 
 .section-header {
@@ -162,9 +247,77 @@ hr.divider {
 }
 
 .section-body {
-  background-color:#f3f8f7;
+  background-color:#fbfbfb;
   border-radius:0 0 0px 0px;
-  padding: 15px 0 0 0;
+  border-top:  1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.np-1 {
+  padding-left:0px;
+  padding-right:0px;
 }
 
 /* Exercises Section End */
+
+
+/*iPhone 6 Portrait*/
+@media only screen and (min-width: 375px) and (max-width:: 667px) and (orientation : portrait) {
+
+}
+/*iPhone 6 landscape*/
+@media only screen and (min-width: 375px) and (max-width:: 667px) and (orientation : landscape) {
+
+}
+/*iPhone 6+ Portrait*/
+@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation : portrait) {
+
+
+}
+/*iPhone 6+ landscape*/
+@media only screen and (min-width:: 414px) and (max-width:: 736px) and (orientation : landscape) {
+
+}
+/*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px){
+}
+
+/*iPhone 6 and iPhone 6+ portrait*/
+@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px) and (orientation : portrait){
+
+  /* Training Navigator  */
+
+  .category {
+    margin:18px 24px 0 24px;
+  }
+
+  /* Training Navigator End */
+
+}
+/*iPhone 6 and iPhone 6+ landscape*/
+@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px) and (orientation : landscape){
+
+}
+
+/*Desktop View*/
+@media only screen and (min-width: 991px) {
+
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
+/*Mobile View*/
+@media only screen and (max-width: 991px) {
+
+  .sub-navbar {
+    display:none;
+
+  }
+
+  .nav-adjust {
+    padding: .5rem 0 1rem;
+  }
+
+}
