@@ -1,58 +1,61 @@
-/* Typography */
+/* ==========================================================================
+   Typography
+   ========================================================================== */
 
 body {
-  font: normal  16px/1.4 "proxima-nova",sans-serif;
+  font: normal 16px/1.4 "proxima-nova", sans-serif;
 }
 
 h1 {
-  font-size:48px;
-  font-weight:700;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size:36px;
-  font-weight:700;
+  font-size: 36px;
+  font-weight: 700;
 }
 
 h3 {
-  font-size:28px;
-  font-weight:400;
+  font-size: 28px;
+  font-weight: 400;
 }
 
 h4 {
-  font-size:24px;
-  font-weight:400;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 h5 {
-  font-size:18px;
-  font-weight:400;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 h6 {
-  font-size:14px;
-  font-weight:400;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .green {
-  color:#007050;
+  color: #007050;
 }
 
 a {
-  color:#000000;
+  color: #000000;
+  text-decoration:none !important;
 }
 
 a:hover {
-  color:#7cb9a6;
+  color: #7cb9a6;
+  text-decoration:none !important;
 }
 
-/* Typography End */
-
-
-/* Elements */
+/* ==========================================================================
+   Elements
+   ========================================================================== */
 
 .container {
-  max-width:1366px;
+  max-width: 1366px;
 }
 
 hr.divider {
@@ -60,64 +63,61 @@ hr.divider {
 }
 
 .vr-divider {
-   padding: 0 3px 0 3px;
-   color:#007050;
+  padding: 0 3px 0 3px;
+  color: #007050;
 }
 
 .img-thumbnail {
-    padding: 0;
-    background-color: #fff;
-    border: 0px;
-    border-radius: 0px;
-    transition: all .2s ease-in-out;
-    max-width: 100%;
-    height: auto;
-    border-right:  1px solid #000;
-    border-bottom: 1px solid #000;
-  }
+  background-color: Transparent;
+  border: 0px;
+  border-radius: 0px;
+  transition: all .2s ease-in-out;
+  height: auto;
+  padding:0px;
+}
 
-/* Elements End */
-
-/* Navbar */
+/* ==========================================================================
+     Navbar
+     ========================================================================== */
 
 .full-navbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
 }
 
 .navbar {
-  background-color:#59a28d;
-  color:#ffffff;
-  display:inherit;
+  background-color: #59a28d;
+  color: #ffffff;
+  display: inherit;
 }
 
 .sub-navbar {
-  background-color:#fff;
-  color:#000000;
-  display:inherit;
-  padding:14px 0 14px 0;
+  background-color: #fff;
+  color: #000000;
+  display: inherit;
+  padding: 14px 0 14px 0;
   font-weight: 700;
   font-size: 14px;
 }
 
 .sub-nav a {
-    color:#000;
+  color: #000;
 }
 
 .sub-nav a:hover {
-  color:#7cb9a6;
+  color: #7cb9a6;
 }
 
 .sub-nav-link {
   padding-right: 1.9rem;
-  text-decoration:none !important;
+  text-decoration: none !important;
 }
 
 .navbar a {
-    color:#fff !important;
+  color: #fff !important;
 }
 
 .navbar a:hover {
-  color:#7cb9a6 !important;
+  color: #7cb9a6 !important;
 }
 
 .navbar-container {
@@ -125,110 +125,106 @@ hr.divider {
 }
 
 #navbarSupportedContent {
-  color:#fff;
+  color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
 .navbar-brand {
-  color:#ffffff !important;
+  color: #ffffff !important;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
 .navbar-btn {
-  color:#fff;
+  color: #fff;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
-  background-color:transparent;
+  background-color: transparent;
   border: 2px solid #fff;
-  border-radius:0;
-  padding:4px 16px 4px 16px;
+  border-radius: 0;
+  padding: 4px 16px 4px 16px;
 }
 
 .navbar-btn:hover {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1px;
-  color:#7cb9a6;
-  background-color:#fff;
+  color: #7cb9a6;
+  background-color: #fff;
   border: 2px solid #fff;
-  border-radius:0;
-  padding:4px 16px 4px 16px;
+  border-radius: 0;
+  padding: 4px 16px 4px 16px;
 }
 
-
 .sub-nav {
-  background-color:#fff;
+  background-color: #fff;
 }
 
 .sub-nav a {
-    color:#000;
+  color: #000;
 }
 
 .sub-nav a:hover {
-  color:#7cb9a6;
+  color: #7cb9a6;
 }
 
-
-/* Nav Bar End */
-
-
-/* Training Navigator */
+/* ==========================================================================
+   Training Navigator CSS
+   ========================================================================== */
 
 .navigator {
-  background-color:#f3f8f7;
-  border-radius:5px;
-  padding:20px 50px 10px 50px;
+  background-color: #fbfbfb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  border-radius: 5px;
+  padding: 20px 50px 10px 50px;
   margin: 30px 0 36px 0;
 }
 
 .navigator-title {
-  text-align:center;
-  color:#007050;
+  text-align: center;
+  color: #2d3e50;
   font-weight: 700;
 }
 
 .navigator-subtitle {
-  text-align:center;
-  font-style:italic;
+  text-align: center;
+  font-style: italic;
 }
 
 .navigator-hr {
-  width:246px;
+  max-width: 246px;
 }
-
 
 .group-categories-list {
   list-style: none;
-  text-align:center;
-  color:#59a28d;
-  font-size:18px;
+  text-align: center;
+  color: #59a28d;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  -webkit-padding-start:0px;
+  -webkit-padding-start: 0px;
   margin-top: -10px;
 }
 
 .category {
-  margin:12px 10px 0 10px;
+  margin: 12px 10px 0 10px;
   font-size: 15px;
-  font-weight:700;
+  font-weight: 500;
 }
 
 .category:hover {
-text-decoration: none;
-border-bottom: 2px solid #59a28d;
-margin-bottom: -2px;
+  text-decoration: none;
+  border-bottom: 2px solid #59a28d;
+  margin-bottom: -2px;
 }
 
-/* Training Navigator End */
-
-
-/* Exercises Section */
+/* ==========================================================================
+   Exercise Section CSS
+   ========================================================================== */
 
 .exercises-section {
   margin-bottom: 36px;
@@ -236,88 +232,175 @@ margin-bottom: -2px;
 }
 
 .section-header {
-  background-color:#59a28d;
-  border-radius:5px 5px 0 0;
-  padding:10px 0 3px 0;
+  background-color: #f3f2f2;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 0 3px 0;
 }
 
 .section-title {
-  color:#fff;
-  text-align:center;
+  color: #2d3e50;
+  font-weight: 600;
+  text-align: center;
 }
 
 .section-body {
-  background-color:#fbfbfb;
-  border-radius:0 0 0px 0px;
-  border-top:  1px solid #000;
-  border-left: 1px solid #000;
+  background-color: #fbfbfb;
+  border-radius: 0 0 0px 0px;
+  border-top: 1px solid #fbfbfb;
+  border-left: 1px solid #fbfbfb;
+}
+
+.exercise-text {
+  display:block;
+  margin-top:5px;
+}
+
+.exercise-icon {
+  background-color: #fbfbfb;
+  border: 0px;
+  border-radius: 0px;
+  padding:5px;
+  transition: all .2s ease-in-out;
+  height: auto;
+  border-right: 1px solid #fbfbfb;
+  border-bottom: 1px solid #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.exercise-icon:hover {
+  background-color: #59a28d;
+  color:#fff;
 }
 
 .np-1 {
-  padding-left:0px;
-  padding-right:0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-/* Exercises Section End */
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
-
-/*iPhone 6 Portrait*/
-@media only screen and (min-width: 375px) and (max-width:: 667px) and (orientation : portrait) {
-
-}
-/*iPhone 6 landscape*/
-@media only screen and (min-width: 375px) and (max-width:: 667px) and (orientation : landscape) {
-
-}
-/*iPhone 6+ Portrait*/
-@media only screen and (min-width: 414px) and (max-width: 736px) and (orientation : portrait) {
-
-
-}
-/*iPhone 6+ landscape*/
-@media only screen and (min-width:: 414px) and (max-width:: 736px) and (orientation : landscape) {
-
-}
-/*iPhone 6 and iPhone 6+ portrait and landscape*/
-@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px){
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
 }
 
-/*iPhone 6 and iPhone 6+ portrait*/
-@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px) and (orientation : portrait){
+.footer-nav {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-padding-start: 0px;
+}
 
-  /* Training Navigator  */
+.footer-social-media {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-padding-start: 0px;
+}
 
-  .category {
-    margin:18px 24px 0 24px;
+.footer-nav-item {
+  margin: 12px 10px 0 10px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.footer-hr {
+  border-top: 2px solid #ffffff !important;
+  width:130px;
+}
+
+.footer-body {
+  background-color: #59a28d;
+  padding:20px 0 10px 0;
+    border-top:8px solid #a7ccc0;
+}
+
+.copyright-footer {
+  background-color: #2d3e50;
+  padding:10px 0 3px 0;
+  text-align:center;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*  Extra small devices (portrait phones, less than 375px) */
+
+@media only screen and (max-width: 375px) {
+  /* Controls Text spacing on mobile */
+  .exercise-text {
+    padding:0 10px 0 10px !important;
   }
-
-  /* Training Navigator End */
-
-}
-/*iPhone 6 and iPhone 6+ landscape*/
-@media only screen and (max-width:: 640px), only screen and (max-width:: 667px), only screen and (max-width: 480px) and (orientation : landscape){
-
+  .mobile-break {
+  }
 }
 
-/*Desktop View*/
-@media only screen and (min-width: 991px) {
+/*  Extra small devices (portrait phones, less than 576px) */
 
-  .mobile-nav {
+@media only screen and (max-width: 575px) {
+  /* Removes padding on smaller displays */
+  .full-width {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  /* Controls category spacing on mobile */
+  .category {
+    margin: 18px 36px 0 36px;
+  }
+  /* Controls Text spacing on mobile */
+  .exercise-text {
+    padding:0 30px 0 30px
+  }
+  /* Controls Text spacing on mobile  for Nav*/
+  .footer-nav {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (max-width: 767px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (max-width: 991px) {
+  /* Hides Desktop Navbar on Mobile */
+  .sub-navbar {
     display: none;
   }
-}
-
-
-/*Mobile View*/
-@media only screen and (max-width: 991px) {
-
-  .sub-navbar {
-    display:none;
-
-  }
-
+  /* Adjusts "Start Stretching Now" text on moible menu  */
   .nav-adjust {
     padding: .5rem 0 1rem;
   }
+}
 
+/* Large devices (desktops, 992px and up) */
+
+@media only screen and (max-width: 1199px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media only screen and (min-width: 991px) {
+  .mobile-nav {
+    display: none;
+  }
+  .mobile-break {
+  display:none;
+  }
 }
