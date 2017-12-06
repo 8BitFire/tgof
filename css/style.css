@@ -240,13 +240,13 @@ hr.divider {
   background-color: #59a28d;
   padding: 10px 26px 10px 26px;
   color:#fff;
-  border-radius: 5px;
+  border-radius: 70px;
   box-shadow: 0 4px 8px 0 rgba(167, 204, 192, 0.5), 0 6px 20px 0 rgba(167, 204, 192, 0.05);
 }
 
 .category:hover {
   text-decoration: none;
-  background-color: #a7ccc0;
+  background-color: #1d7b5e;
 }
 
 /* ==========================================================================
@@ -284,6 +284,7 @@ hr.divider {
 .exercise-text {
   display:block;
   margin-top:5px;
+  font-size: 0.87rem;
 }
 
 .exercise-icon {
