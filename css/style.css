@@ -76,6 +76,29 @@ hr.divider {
   padding:0px;
 }
 
+.exercise-section-row {
+  margin-right:0px !important;
+  margin-left:0px !important;
+  margin-bottom: -1px;
+}
+
+.lg-filler {
+  display:;
+  background-color: #475c73;
+  border: 0px;
+  border-radius: 0px;
+  padding:5px;
+  transition: all .2s ease-in-out;
+  height: auto;
+  border-right: 2px solid #2d3e50;
+  border-bottom: 2px solid #2d3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
 /* ==========================================================================
      Navbar
      ========================================================================== */
@@ -214,40 +237,48 @@ hr.divider {
   margin: 12px 10px 0 10px;
   font-size: 15px;
   font-weight: 500;
+  background-color: #59a28d;
+  padding: 10px 26px 10px 26px;
+  color:#fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(167, 204, 192, 0.5), 0 6px 20px 0 rgba(167, 204, 192, 0.05);
 }
 
 .category:hover {
   text-decoration: none;
-  border-bottom: 2px solid #59a28d;
-  margin-bottom: -2px;
+  background-color: #a7ccc0;
 }
 
 /* ==========================================================================
    Exercise Section CSS
    ========================================================================== */
-
+.icon-grid {
+  margin-bottom:50px;
+}
 .exercises-section {
-  margin-bottom: 36px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01); */
 }
 
 .section-header {
-  background-color: #f3f2f2;
-  border-radius: 5px 5px 0 0;
+  background-color: #2d3e50;
   padding: 10px 0 3px 0;
 }
 
 .section-title {
-  color: #2d3e50;
+  color: #ffffff;
   font-weight: 600;
   text-align: center;
 }
 
+.top-section {
+  border-radius: 10px 10px 0 0;
+}
+
 .section-body {
-  background-color: #fbfbfb;
+  background-color: #f8f7f7;
   border-radius: 0 0 0px 0px;
-  border-top: 1px solid #fbfbfb;
-  border-left: 1px solid #fbfbfb;
+  border-top: 2px solid #2d3e50;
+  border-left: 2px solid #2d3e50;
 }
 
 .exercise-text {
@@ -256,18 +287,22 @@ hr.divider {
 }
 
 .exercise-icon {
-  background-color: #fbfbfb;
+  background-color: #f8f7f7;
   border: 0px;
   border-radius: 0px;
   padding:5px;
   transition: all .2s ease-in-out;
   height: auto;
-  border-right: 1px solid #fbfbfb;
-  border-bottom: 1px solid #fbfbfb;
+  border-right: 2px solid #2d3e50;
+  border-bottom: 2px solid #2d3e50;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+.icon-last {
+  border-right:0px !important;
 }
 
 .exercise-icon:hover {
@@ -279,6 +314,18 @@ hr.divider {
   padding-left: 0px;
   padding-right: 0px;
 }
+
+#fitness {
+  margin-bottom:0px;
+}
+
+/* #fitness-body {
+  border-left: 0px !important;
+}
+
+#troubshooting-body {
+  border-left: 0px !important;
+} */
 
 /* ==========================================================================
    Footer
@@ -359,10 +406,7 @@ hr.divider {
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
-  /* Controls category spacing on mobile */
-  .category {
-    margin: 18px 36px 0 36px;
-  }
+
   /* Controls Text spacing on mobile */
   .exercise-text {
     padding:0 30px 0 30px
@@ -371,15 +415,40 @@ hr.divider {
   .footer-nav {
     flex-direction: column;
   }
+  /* Hides empty space*/
+  .lg-filler {
+    display:none;
+  }
+  .group-categories-list {
+    flex-direction: column;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+
+}
 
 /* Medium devices (tablets, 768px and up) */
 
 @media only screen and (max-width: 991px) {
+  /* Fills in space on col-md */
+  .md-filler {
+    display:;
+    background-color: #475c73;
+    border: 0px;
+    border-radius: 0px;
+    padding:5px;
+    transition: all .2s ease-in-out;
+    height: auto;
+    border-right: 2px solid #2d3e50;
+    border-bottom: 2px solid #2d3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   /* Hides Desktop Navbar on Mobile */
   .sub-navbar {
     display: none;
@@ -388,11 +457,28 @@ hr.divider {
   .nav-adjust {
     padding: .5rem 0 1rem;
   }
+
+  /* Adjusts border for last icon in a row  */
+  .icon-last {
+    border-right: 2px solid #2d3e50 !important;
+
+  }
+  /* Adds border-left for "Fitness"  */
+  #fitness-body {
+    border-left: 2px solid #2d3e50 !important;
+  }
+  /* Adds border-left for "Fitness"  */
+  #troubshooting-body {
+    border-left: 2px solid #2d3e50 !important;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */
 
-@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 1199px) {
+
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -402,5 +488,16 @@ hr.divider {
   }
   .mobile-break {
   display:none;
+  }
+  .md-filler {
+    display:none;
+  }
+  /* Adjusts padding gutters for "Body Maps" "Fitness" & "Troubleshooting" */
+  .small-gutter-right {
+    padding-right:0px !important;
+  }
+
+  .small-gutter-left {
+    padding-left:0px !important;
   }
 }
