@@ -59,7 +59,7 @@ a:hover {
 }
 
 hr.divider {
-  border-top: 2px solid #007050;
+  border-top: 2px solid #2d3e50;
 }
 
 .vr-divider {
@@ -199,7 +199,7 @@ hr.divider {
 
 .navigator {
   background-color: #fbfbfb;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
   border-radius: 5px;
   padding: 20px 50px 10px 50px;
   margin: 30px 0 36px 0;
@@ -241,92 +241,86 @@ hr.divider {
   padding: 10px 26px 10px 26px;
   color:#fff;
   border-radius: 70px;
-  box-shadow: 0 4px 8px 0 rgba(167, 204, 192, 0.5), 0 6px 20px 0 rgba(167, 204, 192, 0.05);
+  box-shadow: 0 4px 8px 4px rgba(167, 204, 192, 0.3), 0 6px 20px 4px rgba(167, 204, 192, 0.03);
+  transition:  all .2s ease-in-out;
 }
 
 .category:hover {
   text-decoration: none;
   background-color: #1d7b5e;
+  box-shadow: 0 5px 16px 5px rgba(167, 204, 192, 0.7), 0 5px 16px 5px rgba(167, 204, 192, 0.07);
+  transform: scale(1.05);
 }
 
 /* ==========================================================================
    Exercise Section CSS
    ========================================================================== */
-.icon-grid {
-  margin-bottom:50px;
-}
+
 .exercises-section {
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01); */
+  margin:50px 0 12px 0;
 }
 
 .section-header {
-  background-color: #2d3e50;
-  padding: 10px 0 3px 0;
+  padding: 20px 0 16px 0;
+  margin:26px 0 0 0;
 }
 
 .section-title {
-  color: #ffffff;
+  color: #000;
   font-weight: 600;
   text-align: center;
 }
 
-.top-section {
-  border-radius: 10px 10px 0 0;
-}
-
 .section-body {
-  background-color: #f8f7f7;
-  border-radius: 0 0 0px 0px;
-  border-top: 2px solid #2d3e50;
-  border-left: 2px solid #2d3e50;
+  background-color: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  padding:20px 15px;
 }
 
 .exercise-text {
   display:block;
-  margin-top:5px;
+  margin-top:10px;
   font-size: 0.87rem;
+  text-align: center;
+}
+
+.exercise-icon-column {
+  margin:15px 0 15px 0;
 }
 
 .exercise-icon {
-  background-color: #f8f7f7;
+  background-color: #ffffff;
   border: 0px;
-  border-radius: 0px;
-  padding:5px;
+  border-radius: 10px;
+  padding:10px 2px 0 2px;
   transition: all .2s ease-in-out;
   height: auto;
-  border-right: 2px solid #2d3e50;
-  border-bottom: 2px solid #2d3e50;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.icon-last {
-  border-right:0px !important;
+  flex-direction: column;
 }
 
 .exercise-icon:hover {
-  background-color: #59a28d;
-  color:#fff;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  transform: scale(1.06);
+  color:#000;
 }
 
-.np-1 {
-  padding-left: 0px;
-  padding-right: 0px;
+.slim-small-gutter-right {
+  padding-right: 3px;
 }
 
-#fitness {
-  margin-bottom:0px;
+.slim-small-gutter-left {
+  padding-left: 3px;
 }
 
-/* #fitness-body {
-  border-left: 0px !important;
+.anchor-buffer {
+  padding-top: 60px;
+  margin-top: -60px;
 }
-
-#troubshooting-body {
-  border-left: 0px !important;
-} */
 
 /* ==========================================================================
    Footer
@@ -402,12 +396,6 @@ hr.divider {
 /*  Extra small devices (portrait phones, less than 576px) */
 
 @media only screen and (max-width: 575px) {
-  /* Removes padding on smaller displays */
-  .full-width {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-  }
-
   /* Controls Text spacing on mobile */
   .exercise-text {
     padding:0 30px 0 30px
