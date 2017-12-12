@@ -4,6 +4,7 @@
 
 body {
   font: normal 16px/1.4 "proxima-nova", sans-serif;
+  color: #000;
 }
 
 h1 {
@@ -42,12 +43,12 @@ h6 {
 
 a {
   color: #000000;
-  text-decoration:none !important;
+  text-decoration: none !important;
 }
 
 a:hover {
   color: #7cb9a6;
-  text-decoration:none !important;
+  text-decoration: none !important;
 }
 
 /* ==========================================================================
@@ -73,24 +74,24 @@ hr.divider {
   border-radius: 0px;
   transition: all .2s ease-in-out;
   height: auto;
-  padding:0px;
+  padding: 0px;
 }
 
 .exercise-section-row {
-  margin-right:0px !important;
-  margin-left:0px !important;
+  margin-right: 0px !important;
+  margin-left: 0px !important;
   margin-bottom: -1px;
 }
 
 .btn-1 {
-  padding:12px 36px 12px 36px;
+  padding: 12px 36px 12px 36px;
   background-color: #59a28d;
-  color:#fff;
+  color: #fff;
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: 600;
   box-shadow: 0 4px 8px 4px rgba(167, 204, 192, 0.3), 0 6px 20px 4px rgba(167, 204, 192, 0.03);
-  transition:  all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .btn-1:hover {
@@ -101,20 +102,20 @@ hr.divider {
 }
 
 .btn-2 {
-  padding:12px 36px 12px 36px;
+  padding: 12px 36px 12px 36px;
   background-color: #fff;
-  color:#000;
+  color: #000;
   border-radius: 10px;
   text-transform: uppercase;
   font-weight: 600;
-  box-shadow: 0 4px 8px 4px rgba(167, 204, 192, 0.3), 0 6px 20px 4px rgba(167, 204, 192, 0.03);
-  transition:  all .2s ease-in-out;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1), 0 6px 20px 4px rgba(0, 0, 0, 0.1);
+  transition: all .2s ease-in-out;
 }
 
 .btn-2:hover {
   text-decoration: none;
   background-color: #ffffff;
-  box-shadow: 0 5px 16px 5px rgba(167, 204, 192, 0.7), 0 5px 16px 5px rgba(167, 204, 192, 0.07);
+  box-shadow: 0 5px 16px 5px rgba(0, 0, 0, 0.4), 0 5px 16px 5px rgba(0, 0, 0, 0.04);
   transform: scale(1.05);
 }
 
@@ -213,78 +214,316 @@ hr.divider {
 }
 
 /* ==========================================================================
+     Video Hero CSS
+     ========================================================================== */
+
+
+     .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.cover .hi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+}
+.cover .hi span {
+  color: #ff0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.cover .hi em {
+  font-style: normal;
+}
+.cover .hi em.hidden {
+  display: none;
+}
+.tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.tv .screen {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin: auto;
+  opacity: 0;
+  transition: opacity .5s;
+}
+.tv .screen.active {
+  opacity: 1;
+}
+
+
+/* ==========================================================================
    TGOF Training Options CSS
    ========================================================================== */
 
-   .training-columns {
-    margin:30px 0 30px 0;
-   }
+.training-columns {
+  margin: 30px 0 30px 0;
+}
 
-   .training-column {
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     flex-direction: column;
-     margin:40px 0 40px 0;
-   }
+.training-column {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 40px 0 40px 0;
+}
 
-   .training-body {
-     padding:34px 60px 34px 60px;
-     border-radius:10px;
-     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
-     min-height: 420px;
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     flex-direction: column;
-     position: relative;
-   }
+.training-body {
+  padding: 34px 60px 34px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
 
-   .training-title {
-     text-align:center;
-     font-weight: 600;
-     font-size: 28px;
-   }
+.training-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #1d7b5e;
+}
 
-   .training-subtitle {
-     text-align: center;
-     font-style: italic;
-   }
+.training-subtitle {
+  text-align: center;
+  font-style: italic;
+}
 
-   .training-hr {
-     width:124px;
-   }
+.training-hr {
+  width: 124px;
+}
 
-   .training-list {
-     -webkit-padding-start: 20px;
-   }
+.training-list {
+  -webkit-padding-start: 20px;
+}
 
-   .training-btn {
-     position: absolute;
-    bottom:   0;
-    margin: 18px 0 34px 0;
-   }
+.training-btn {
+  position: absolute;
+  bottom: 0;
+  margin: 18px 0 34px 0;
+}
 
 /* ==========================================================================
   About Resistance Flexibility Training CSS
   ========================================================================== */
 
-  .about-image {
-    background: url(/images/about-flexibility-image.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+.about-image {
+  background: url(../images/home/about-flexibility-image.jpg) no-repeat center center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about-text {
+  background-color: #59a28d;
+  padding: 80px 60px 80px 60px;
+}
+
+.about-title {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.about-hr {
+  border-top: 2px solid #ffffff !important;
+  width: 124px;
+  margin-left: 0;
+}
+
+.about-list {
+  color: #fff;
+  margin: 20px 0 0 0;
+}
+
+.concomitance {
+  margin: 14px 0 60px 0;
+}
+
+.about-text-container {
+  max-width: 683px;
+}
+
+/* ======+===================================================================
+  Bob Cooley CSS
+  ========================================================================== */
+
+.bob-cooley {
+  background: url(../images/home/bob-cooley-background-light.jpg) no-repeat center center fixed;
   background-size: cover;
-  }
+}
 
-  .about-text {
-    background-color:#7cb9a6 ;
-    padding:80px 60px 80px 60px;
-  }
+.bob-cooley-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  padding: 100px 20px 100px 20px;
+}
 
-  .about-text-container {
-    max-width:683px;
-  }
+.qoute {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2d3e50;
+}
+
+.bob-cooley-btn {
+  margin: 60px 0 0 0;
+}
+
+/* ======+===================================================================
+    Events CSS
+   ========================================================================== */
+
+.event-container {
+  background: url(../images/home/events-background.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.event-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 100px 15px 100px 15px;
+}
+
+.events-title {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.events-subtitle {
+  color: #fff;
+  text-align: center;
+}
+
+.events-hr {
+  width: 124px;
+  border-top: 2px solid #ffffff !important;
+}
+
+/* ==========================================================================
+   Trainers CSS
+   ========================================================================== */
+
+.trainer-container {
+  margin: 80px 0 80px 0;
+}
+
+.trainer-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+.trainer-title {
+  text-align: center;
+  color: #007050;
+  text-transform: uppercase;
+}
+
+.elite-trainer {
+  margin: 30px 0 0 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #2d3e50;
+}
+
+.trainer-subtitle {
+  text-align: center;
+  font-style: italic;
+}
+
+.profile-image {
+  border-radius: 100%;
+  height: 160px;
+  width: 160px;
+  border: 2px solid #59a28d;
+}
+
+.trainer-name {
+  color: #59a28d;
+  margin: 20px 0 0 0;
+  font-weight: 600;
+}
+
+.trainer-info {
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-padding-start: 0px;
+}
+
+.trainer-info-item:hover {
+  color: #59a28d;
+}
+
+.trainer-info-item {
+  margin: 6px 10px 30px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2d3e50;
+}
+
+.fa-spacing {
+  padding: 0 6px 0 6px;
+}
+
+.profile-body {
+  padding: 34px 40px 34px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile-column {
+  margin: 20px 0 20px 0;
+}
 
 /* ==========================================================================
    Training Navigator CSS
@@ -332,10 +571,10 @@ hr.divider {
   font-weight: 500;
   background-color: #59a28d;
   padding: 10px 26px 10px 26px;
-  color:#fff;
+  color: #fff;
   border-radius: 70px;
   box-shadow: 0 4px 8px 4px rgba(167, 204, 192, 0.3), 0 6px 20px 4px rgba(167, 204, 192, 0.03);
-  transition:  all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .category:hover {
@@ -350,12 +589,12 @@ hr.divider {
    ========================================================================== */
 
 .exercises-section {
-  margin:50px 0 12px 0;
+  margin: 50px 0 12px 0;
 }
 
 .section-header {
   padding: 20px 0 16px 0;
-  margin:26px 0 0 0;
+  margin: 26px 0 0 0;
 }
 
 .section-title {
@@ -368,26 +607,26 @@ hr.divider {
   background-color: #ffffff;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
-  padding:20px 15px;
+  padding: 20px 15px;
 }
 
 .exercise-text {
-  color:#2d3e50;
-  display:block;
-  margin-top:10px;
+  color: #2d3e50;
+  display: block;
+  margin-top: 10px;
   font-size: 0.87rem;
   text-align: center;
 }
 
 .exercise-icon-column {
-  margin:15px 0 15px 0;
+  margin: 15px 0 15px 0;
 }
 
 .exercise-icon {
   background-color: #ffffff;
   border: 0px;
   border-radius: 10px;
-  padding:10px 2px 0 2px;
+  padding: 10px 2px 0 2px;
   transition: all .2s ease-in-out;
   height: auto;
   display: flex;
@@ -400,7 +639,7 @@ hr.divider {
 .exercise-icon:hover {
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.01);
   transform: scale(1.06);
-  color:#000;
+  color: #000;
 }
 
 .slim-small-gutter-right {
@@ -449,21 +688,20 @@ hr.divider {
 
 .footer-hr {
   border-top: 2px solid #ffffff !important;
-  width:130px;
+  width: 130px;
 }
 
 .footer-body {
   background-color: #59a28d;
-  padding:20px 0 10px 0;
-    border-top:8px solid #a7ccc0;
+  padding: 20px 0 10px 0;
+  border-top: 8px solid #a7ccc0;
 }
 
 .copyright-footer {
   background-color: #2d3e50;
-  padding:10px 0 3px 0;
-  text-align:center;
+  padding: 10px 0 3px 0;
+  text-align: center;
 }
-
 
 /* ==========================================================================
    Media Queries
@@ -472,8 +710,7 @@ hr.divider {
 /*  Extra small devices (portrait phones, less than 375px) */
 
 @media only screen and (max-width: 375px) {
-  .mobile-break {
-  }
+  .mobile-break {}
 }
 
 /*  Extra small devices (portrait phones, less than 576px) */
@@ -486,33 +723,21 @@ hr.divider {
   .group-categories-list {
     flex-direction: column;
   }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-
-@media only screen and (max-width: 767px) {
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-
-@media only screen and (max-width: 991px) {
-  /* Fills in space on col-md */
-  .md-filler {
-    display:;
-    background-color: #475c73;
-    border: 0px;
-    border-radius: 0px;
-    padding:5px;
-    transition: all .2s ease-in-out;
-    height: auto;
-    border-right: 2px solid #2d3e50;
-    border-bottom: 2px solid #2d3e50;
+  .about-text-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media only screen and (max-width: 767px) {}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media only screen and (max-width: 991px) {
   /* Hides Desktop Navbar on Mobile */
   .sub-navbar {
     display: none;
@@ -525,9 +750,7 @@ hr.divider {
 
 /* Large devices (desktops, 992px and up) */
 
-@media only screen and (max-width: 1199px) {
-
-}
+@media only screen and (max-width: 1199px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
 
@@ -536,17 +759,16 @@ hr.divider {
     display: none;
   }
   .mobile-break {
-  display:none;
+    display: none;
   }
   .md-filler {
-    display:none;
+    display: none;
   }
   /* Adjusts padding gutters for "Body Maps" "Fitness" & "Troubleshooting" */
   .small-gutter-right {
-    padding-right:0px !important;
+    padding-right: 0px !important;
   }
-
   .small-gutter-left {
-    padding-left:0px !important;
+    padding-left: 0px !important;
   }
 }
